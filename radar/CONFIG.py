@@ -1,4 +1,20 @@
+
 RADAR_CONFIGS = {
+
+    # ---------------------------------------------------------
+    # 8) SCAN LEO (detección de satélites LEO)
+    # ---------------------------------------------------------
+    "scanLEO": {
+        "bw_az_deg": 2.0,
+        "bw_el_deg": 2.0,
+        "R": 2000000,
+        "az_sector": (0, 360),
+        "el_sector": (0, 90),
+        "scan_speed_deg_s": 15,
+        "dwell_time": 0.002,
+        "mode": "search",
+        "scan_pattern": "raster"
+    },
 
     # ---------------------------------------------------------
     # 1) SEARCH RÁPIDO (tipo Space Fence)
